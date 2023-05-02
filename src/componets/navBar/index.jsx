@@ -11,7 +11,6 @@ function NavBar() {
         window.open("https://centralcliente.integrato.net.br/central_assinante_web/login")
     
     }
-
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
@@ -24,7 +23,7 @@ function NavBar() {
                     </NavDropdown>
                 </Nav>
                 <Nav className='text-center'>
-                    <Navbar.Brand href="#home" className=''>(62) 3379-2839</Navbar.Brand>
+                    <Navbar.Brand href="#home">(62) 3379-2839</Navbar.Brand>
                     <Button onClick={link} >Área do Cliente</Button>
                 </Nav>
             </Container>
