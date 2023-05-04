@@ -21,10 +21,8 @@ export default function Home() {
       <NavBar/>
       <div className= {styles['body']}>
       <Navegacao/>
-      
-      </div>
       <Rodape/>
-      
+      </div>
     </>
   )
 }

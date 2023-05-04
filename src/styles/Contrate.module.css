@@ -1,0 +1,40 @@
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a49;
+ 
+}
+.body{
+    background-color:  #e6e6e6;
+}
+.sub{
+    font-size: 20px;
+    color: #4a4a49;
+    margin-top: 20px;
+   
+}
+.container{
+    text-align: center;
+    
+}
+.card{
+    background-color: #e6e6e6 !important;
+    border: #e6e6e6  !important;
+    height: 50%;
+}
+.cardG{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 100%;
+}
+.botao {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    color: white;
+    background: -webkit-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+    background: -moz-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+    background: -o-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+    background: linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+}

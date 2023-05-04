@@ -25,9 +25,9 @@ export default function Institucional() {
       <Navegacao/>
       <Texto/>
       <Banner/>
-      </div>
+      
       <Rodape/>
-     
+      </div>
       
     </>
   )
