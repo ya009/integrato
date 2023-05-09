@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Contrate.module.css'
+import styles from '@/styles/Ligar.module.css'
 import NavBar from '@/componets/navBar'
-import  'bootstrap/dist/css/bootstrap.min.css' ;
+import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/navegar'
 import Rodape from '@/componets/rodape';
-import Contrate from '@/componets/contrateTitulo';
-import IconCompra from '@/componets/contrateIcon';
 import FormLiga from '@/componets/formLigar';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,7 +22,6 @@ export default function Plano() {
       <div className= {styles['body']}>
       <Navegacao/>
       <FormLiga/>
-
       <Rodape/>
       </div>
     </>

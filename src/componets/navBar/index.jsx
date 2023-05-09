@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import styles from '@/styles/Home.module.css'
 
 
 function NavBar() {
@@ -24,7 +25,7 @@ function NavBar() {
                 </Nav>
                 <Nav className='text-center'>
                     <Navbar.Brand href="#home">(62) 3379-2839</Navbar.Brand>
-                    <Button onClick={link} >Área do Cliente</Button>
+                    <Button onClick={link} className= {styles['botao']}>Área do Cliente</Button>
                 </Nav>
             </Container>
         </Navbar>

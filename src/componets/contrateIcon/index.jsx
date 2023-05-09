@@ -13,6 +13,10 @@ function IconCompra(){
     function handleClick(){
         router.push('/ligar')
     }
+    function handleClick2(){
+        router.push('/assinar')
+    }
+    
 
     return(
         <Container className= {styles['container']}>
@@ -38,7 +42,7 @@ function IconCompra(){
                                 <h1 className= {styles['titulo']}>Contrate online, agora!</h1>
                                 <h3 className= {styles['sub']}>O jeito mais fácil e rápido de ter a melhor internet com você.</h3>
                             </div>
-                            <Button className= {styles['botao']} variant='secondary'>Contratar Online</Button>
+                            <Button className= {styles['botao']} variant='secondary' onClick={handleClick2}>Contratar Online</Button>
 
                         </div>
                     </div>

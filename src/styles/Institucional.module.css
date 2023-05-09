@@ -2,73 +2,43 @@
 .body{
     background-color: #e6e6e6;
 }
-.texto{
-    font-size: 18px;
-    line-height: 36px;
-}
-.banner{
+.container{
     display: flex;
     width: 100%;
-    background: -webkit-linear-gradient(90deg, #f8991d 0%, #ff6587 100%);
-    background: -moz-linear-gradient(90deg, #f8991d 0%, #ff6587 100%);
-    background: -o-linear-gradient(90deg, #f8991d 0%, #ff6587 100%);
-    background: linear-gradient(90deg, #f8991d 0%, #ff6587 100%);
-    color: white;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    background-color: purple !important;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.card{
+background-color: purple !important;
+border: none !important;
+color: white;
+
 }
 .titulo{
     display: inline-block;
     font-size: 36px;
     font-weight: bold;
-    width: 300px;
     text-align: left;
-    padding-left: 2%;
+  
 }
 .numero{
     display: inline-block;
     font-size: 60px;
     font-weight: bold;
     text-align: inherit;
-    margin-left: 10%;
+    margin-left: 0px;
+    margin-right: 10px;
 }
 .uni{
     display: inline-block;
     font-size: 36px;
-    margin-right: 1%;
+    margin-right: 2%;
+    margin-top: 30px;
 }
 .complemento{
     display: inline-block;
     font-size: 18px;
-    margin-top: 0.5%;
-    margin-left: 20%;
-}
+    margin-left: 10px;
 
-@media (max-width: 768px) {
-  .texto {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  .titulo {
-    font-size: 28px;
-    width: auto;
-    text-align: center;
-    padding: 2%;
-  }
-
-  .numero {
-    font-size: 40px;
-    margin-left: 0;
-  }
-
-  .uni {
-    font-size: 24px;
-  }
-
-  .complemento {
-    font-size: 16px;
-    margin-left: 0;
-    margin-top: 1%;
-  }
 }

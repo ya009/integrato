@@ -33,8 +33,8 @@
     cursor: pointer;
     vertical-align: middle;
     color: white;
-    background: -webkit-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: -moz-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: -o-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
 }

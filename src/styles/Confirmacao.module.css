@@ -1,0 +1,42 @@
+.body{
+    background-color: #e6e6e6;
+}
+.container{
+    justify-content: center !important;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.numero{
+    line-height: 25px;
+    display: inline-block;
+    width: 25px;
+    border: 1px #ccc solid;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 5px;
+}
+.nome{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cadastro{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #70c72f;
+}
+.botao{
+    
+    border: none !important;
+    cursor: pointer;
+    color: white;
+    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    margin-bottom: 5%;
+    margin-top: 2%;
+
+  
+}

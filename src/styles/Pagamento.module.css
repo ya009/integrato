@@ -1,0 +1,55 @@
+.body{
+    background-color: #e6e6e6;
+}
+.numero{
+    line-height: 25px;
+    display: inline-block;
+    width: 25px;
+    border: 1px #ccc solid;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 5px;
+}
+.nome{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cadastro{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #70c72f;
+}
+.dados{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #4a4a49;
+    opacity: 0.5;
+    font-weight: bold;
+    margin: 0 0 30px;
+    padding: 0 20px 0 0;
+    margin-top: 3%;
+
+}
+.form{
+    color: #4a4a49;
+}
+.termo{
+    font-size: 18px;
+    line-height: 1.2;
+    color: #666;
+    margin: 0 0 20px;
+  
+}
+.botao{
+    display: inline-block;
+    border: none !important;
+    cursor: pointer;
+    color: white;
+    width: 20%;
+    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}

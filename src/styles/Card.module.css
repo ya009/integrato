@@ -1,0 +1,9 @@
+.texto{
+    font-size: 18px;
+    line-height: 36px;
+}
+.card{
+    background-color: #e6e6e6;
+    border: none;
+    justify-content: center;
+}

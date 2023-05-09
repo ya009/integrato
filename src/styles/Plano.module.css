@@ -10,7 +10,7 @@
     vertical-align: baseline;
     font-size: 20px;
     color: #3a3a39;
-    /* padding: 10px 80px; */
+
 }
 .table{
     text-align: center;
@@ -18,7 +18,7 @@
 .titulo {
     font-weight: bold;
     font-size: 32px;
-    color: #f7941d;
+    color: purple;
     vertical-align: middle;
 }
 .cima{
@@ -29,10 +29,10 @@
 .quant {
     font-size: 70px;
     font-weight: 900;
-    background: -webkit-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: -moz-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: -o-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -84,10 +84,10 @@
     cursor: pointer;
     vertical-align: middle;
     color: white;
-    background: -webkit-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: -moz-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: -o-linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
-    background: linear-gradient(90deg, #fc882b 0%, #fc725a 100%);
+    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
+    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
 }
 .plan-box {
     display: flex;

@@ -6,6 +6,8 @@ import NavBar from '@/componets/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/navegar'
 import Rodape from '@/componets/rodape'
+import Aplicativo from '@/componets/aplicativo'
+import Botao from '@/componets/botao'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +23,8 @@ export default function Home() {
       <NavBar/>
       <div className= {styles['body']}>
       <Navegacao/>
+      <Aplicativo/>
+      <Botao/>
       <Rodape/>
       </div>
     </>
