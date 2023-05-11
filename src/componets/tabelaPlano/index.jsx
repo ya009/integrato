@@ -14,7 +14,8 @@ function TablePlan() {
     }
 
   return (
-    <Card className= {styles['container']}>
+    <Container>
+        <Card className= {styles['container']}>
         <div className="table-responsive">
         <Table  className= {styles['tablePlan']} >
             <thead className= {styles['table']}>
@@ -191,6 +192,9 @@ function TablePlan() {
         </Table>
         </div>
     </Card>    
+
+    </Container>
+    
   );
 }
 export default TablePlan;  

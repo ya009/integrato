@@ -8,6 +8,8 @@ import Navegacao from '@/componets/navegar'
 import Rodape from '@/componets/rodape'
 import Aplicativo from '@/componets/aplicativo'
 import Botao from '@/componets/botao'
+import BannerMeio from '@/componets/bannerMeio'
+import Slide from '@/componets/slide'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +27,8 @@ export default function Home() {
       <Navegacao/>
       <Aplicativo/>
       <Botao/>
+      <BannerMeio/>
+      <Slide/>
       <Rodape/>
       </div>
     </>

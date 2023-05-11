@@ -13,7 +13,7 @@
     border: none !important;
     cursor: pointer;
     color: white;
-    width: 200px;
+
     background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
     background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
     background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
@@ -26,20 +26,48 @@
     background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
     background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
     border: none !important;
+
 }
 
 .box1{
     display: inline-block;
-    margin-right: 3%;
-    margin-bottom: 3% ;
+    width: 50%;
+
 }
 .box2{
     display: inline-block;
+
+
 }
 .container{
+    margin-top: 2%;
+    display:flex;
     justify-content: center ;
 }
 .imagem{
     width: 100%;
     height: 10%;
+}
+.divBotao{
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -16%;
+    width: 70% !important;
+
+}
+.img{
+    width: 100%;
 }

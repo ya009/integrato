@@ -1,4 +1,4 @@
-const { Container, CardGroup, Card, Form, Button } = require("react-bootstrap");
+const { Container, CardGroup, Card, Form, Button, Image } = require("react-bootstrap");
 import styles from '@/styles/Ligar.module.css'
 import Swal from 'sweetalert2'
 
@@ -19,7 +19,7 @@ function FormRH(){
             <CardGroup className= {styles['cardG']}>
                 <Card className= {styles['card']}>
                     <div>
-                        <h1 className= {styles['titulo']}>Quero ser um colaborador</h1>
+                        <Image src='/colaborador.png'></Image>
                         <h1 className= {styles['texto']}>Venha fazer parte da equipe que mais cresce na cidade</h1>
                     </div>
 

@@ -6,6 +6,7 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/navegar'
 import TablePlan from '@/componets/tabelaPlano';
 import Rodape from '@/componets/rodape';
+import BannerHome from '@/componets/bannerHome';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Plano() {
       <NavBar/>
       <div className= {styles['body']}>
       <Navegacao/>
+      <BannerHome/>
       <TablePlan/>
       <Rodape/>
       </div>

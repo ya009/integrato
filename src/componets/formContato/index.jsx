@@ -1,4 +1,4 @@
-const { Container, CardGroup, Card, Form, Button } = require("react-bootstrap");
+const { Container, CardGroup, Card, Form, Button, Image } = require("react-bootstrap");
 import styles from '@/styles/Ligar.module.css'
 import Swal from 'sweetalert2'
 
@@ -19,7 +19,7 @@ function FormContato(){
             <CardGroup className= {styles['cardG']}>
                 <Card className= {styles['card']}>
                     <div>
-                        <h1 className= {styles['titulo']}>Precisa entrar em contato com a Integrato?</h1>
+                        <Image src='/contato.png' className= {styles['img']}></Image>
                         <h1 className= {styles['texto']}>Este é seu canal de comunicação com a nossa equipe.</h1>
                     </div>
 
@@ -45,7 +45,7 @@ function FormContato(){
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className="mb-3" >
-                            <Form.Control type="text" placeholder="(Escreva sua mensagem aqui)" />
+                            <Form.Control as= 'textarea' placeholder="(Escreva sua mensagem aqui)" rows={6} />
                         </Form.Group>
                     </Form>
                     <div className="d-flex justify-content-center">
