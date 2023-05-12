@@ -3,7 +3,7 @@
 }
 .rodape{
    
-    background: linear-gradient(90deg, #4a4a49 0%, #1b1b1a 100%);
+    background:#1b1b1a;
     padding: 20px 0;
     text-align: center;
     color: white;
@@ -70,4 +70,19 @@
 }
 .img{
     width: 100%;
+}
+.card{
+    color: purple;
+    background: #1b1b1a !important;
+    border: none !important;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.traco{
+    border-bottom: 4px solid ;
+    color: purple;
+    opacity: 0.5;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }

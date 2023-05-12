@@ -1,0 +1,41 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model contato {
+  id       Int    @id @default(autoincrement())
+  nome     String @db.VarChar(100)
+  email    String @db.VarChar(100)
+  telefone Int
+  cidade   String @db.VarChar(20)
+  mensagem String @db.VarChar(600)
+}
+
+model ligar {
+  id       Int    @id @default(autoincrement())
+  nome     String @db.VarChar(100)
+  email    String @db.VarChar(100)
+  telefone Int
+  cidade   String @db.VarChar(20)
+}
+
+model contrato {
+  id             Int      @id @default(autoincrement())
+  nome           String   @db.VarChar(100)
+  email          String   @db.VarChar(100)
+  telResidencial Int
+  telComercial   Int
+  telefone       Int
+  rg             Int
+  cpf            Int
+  dataNasc       DateTime @db.Date
+  cidade         String   @db.VarChar(20)
+  cep            Int
+  rua            String   @db.VarChar(100)
+  numero         Int
+  bairro         String   @db.VarChar(100)
+  complemento    String   @db.VarChar(100)
+  distrito       String   @db.VarChar(100)
+  dataVenc       DateTime @db.Date
+}

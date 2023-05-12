@@ -2,9 +2,33 @@ const { Container, CardGroup, Card, Form, Button } = require("react-bootstrap");
 import styles from '@/styles/Ligar.module.css'
 import Swal from 'sweetalert2'
 
+
 function FormLiga(){
 
-    const handleClick = () => {
+     async function Enviar(){
+
+        let n = document.getElementById('nome')
+        let nome = n.value
+
+        let e = document.getElementById('email')
+        let email = e.value
+
+        let t = document.getElementById('telefone')
+        let telefone = t.value
+        
+        let c = document.getElementById('cidade')
+        let cidade = c.value
+
+        const ligar = await fetch('/api/ligar',{
+        method: 'POST',
+        body: JSON.stringify({ nome, email, telefone, cidade }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+        })
+
+        if (res.status === 200) {
+        // Se o envio for bem sucedido, redirecione o usuário para a página de confirmação
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -12,8 +36,12 @@ function FormLiga(){
             showConfirmButton: false,
             timer: 1500
           })
-    }
+      } else {
+        // Caso contrário, mostre uma mensagem de erro
+        alert('Ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde.')
+      }
     
+    }
     return(
         <Container className= {styles['container']} >
             <CardGroup className= {styles['cardG']}>
@@ -27,26 +55,26 @@ function FormLiga(){
                 <Card className= {styles['card']}>
                     <Form >
                         <Form.Group className="mb-3" >
-                            <Form.Control type="name" placeholder="Nome" /> 
+                            <Form.Control type="name" placeholder="Nome" id='nome'/> 
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="E-mail" />  
+                            <Form.Control type="email" placeholder="E-mail" id='email' />  
                         </Form.Group>
                         <Form.Group className="mb-3" >
-                            <Form.Control type="phone" placeholder="Telefone" />
+                            <Form.Control type="phone" placeholder="Telefone" id='telefone' />
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <Form.Select >
+                            <Form.Select id='cidade'>
                                 <option> Cidade / UF</option>
-                                <option>Minaçu(GO) </option>
-                                <option>Campinaçu(GO) </option>
-                                <option>Palmeirópolis(TO) </option>
-                                <option>Jáu(TO) </option>
+                                <option value= 'Minaçu(GO)'>Minaçu(GO) </option>
+                                <option value='Campinaçu(GO)'>Campinaçu(GO) </option>
+                                <option value='Palmeiropolis(GO)'>Palmeirópolis(TO) </option>
+                                <option value='Jau(GO)'>Jáu(TO) </option>
                             </Form.Select>
                         </Form.Group>
                     </Form>
                     <div className="d-flex justify-content-center">
-                        <Button className= {styles['botao']} variant='secondary' onClick={handleClick}> Enviar </Button>
+                        <Button className= {styles['botao']} variant='secondary' onClick={Enviar}> Enviar </Button>
 
                     </div>
                    
