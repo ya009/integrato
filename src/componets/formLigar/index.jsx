@@ -4,9 +4,7 @@ import Swal from 'sweetalert2'
 
 
 function FormLiga(){
-
      async function Enviar(){
-
         let n = document.getElementById('nome')
         let nome = n.value
 
@@ -22,25 +20,8 @@ function FormLiga(){
         const ligar = await fetch('/api/ligar',{
         method: 'POST',
         body: JSON.stringify({ nome, email, telefone, cidade }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        headers: {'Content-Type': 'application/json'}
         })
-
-        if (res.status === 200) {
-        // Se o envio for bem sucedido, redirecione o usuário para a página de confirmação
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Dados enviados com sucesso!',
-            showConfirmButton: false,
-            timer: 1500
-          })
-      } else {
-        // Caso contrário, mostre uma mensagem de erro
-        alert('Ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde.')
-      }
-    
     }
     return(
         <Container className= {styles['container']} >
@@ -50,7 +31,6 @@ function FormLiga(){
                         <h1 className= {styles['titulo']}>Nossos consultores estão prontos para te ligar.</h1>
                         <h1 className= {styles['texto']}>Preencha os dados ao lado e deixe que a gente fale com você.</h1>
                     </div>
-
                 </Card>
                 <Card className= {styles['card']}>
                     <Form >
@@ -75,14 +55,10 @@ function FormLiga(){
                     </Form>
                     <div className="d-flex justify-content-center">
                         <Button className= {styles['botao']} variant='secondary' onClick={Enviar}> Enviar </Button>
-
                     </div>
-                   
                 </Card>
             </CardGroup>
-
         </Container>
     )
 }
-
 export default FormLiga;
