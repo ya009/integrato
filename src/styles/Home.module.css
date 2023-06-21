@@ -1,3 +1,10 @@
+.select{
+    border-color: #7e1bca !important;
+    border-width: 3px !important;
+    background-color: #212224 !important;
+    color: #fff !important;
+    width: 300px !important;
+}
 .body{
     background-color: #e6e6e6;
 }
@@ -13,18 +20,15 @@
     border: none !important;
     cursor: pointer;
     color: white;
+    background-color: #7e1bca;
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
 
-    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
-    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
 }
 .botao1{
     display: inline-block;
-    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
-    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background-color: #7e1bca;
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
+
     border: none !important;
 
 }
@@ -44,10 +48,13 @@
     display:flex;
     justify-content: center ;
 }
-.imagem{
-    width: 100%;
-    height: 10%;
+.img{
+    width: 5% !important;
+    margin-right: 1%;
+    justify-content: flex-end ;
+    display: flex;
 }
+
 .divBotao{
     display: inline-block;
     justify-content: center;
@@ -60,19 +67,10 @@
     width: 100%;
     margin-top: 5%;
 }
-.slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -16%;
-    width: 70% !important;
 
-}
-.img{
-    width: 100%;
-}
+
 .card{
-    color: purple;
+    color: #7E1BCA;
     background: #1b1b1a !important;
     border: none !important;
     font-size: 18px;
@@ -81,7 +79,7 @@
 }
 .traco{
     border-bottom: 4px solid ;
-    color: purple;
+    color: #7E1BCA;
     opacity: 0.5;
     margin-bottom: 1%;
     margin-top: 1%;

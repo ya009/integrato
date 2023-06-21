@@ -1,6 +1,6 @@
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Banner.module.css'
 
 function Slide() {
   return (
@@ -25,6 +25,12 @@ function Slide() {
         />
       </Carousel.Item>
     </Carousel>
+    <div className= {styles['titulo']}>
+      <h1>
+        Saiba mais sobre o maior <strong>provedor de internet</strong> do interior do Brasil.
+      </h1>
+      <Button className= {styles['botBio']}>Conheça a Integrato</Button>
+    </div>
 
     </Container>
     

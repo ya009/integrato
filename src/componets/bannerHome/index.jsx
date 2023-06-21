@@ -1,5 +1,5 @@
 const { Image, Container } = require("react-bootstrap");
-import styles from '@/styles/Plano.module.css'
+import styles from '@/styles/Home.module.css'
 
 function BannerHome(){
     return(

@@ -5,12 +5,13 @@
 .container{
     display: flex;
     width: 100%;
-    background-color: purple !important;
+    background-color:#7E1BCA!important;
     padding-top: 4%;
     padding-bottom: 4%;
 }
 .card{
-background-color: purple !important;
+background-color: #7E1BCA
+!important;
 border: none !important;
 color: white;
 

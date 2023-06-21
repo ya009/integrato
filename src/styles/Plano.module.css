@@ -19,7 +19,7 @@
 .titulo {
     font-weight: bold;
     font-size: 32px;
-    color: purple;
+    color: #7e1bca;
     vertical-align: middle;
 }
 .cima{
@@ -30,10 +30,9 @@
 .quant {
     font-size: 70px;
     font-weight: 900;
-    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
-    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background-color: #7e1bca;
+background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
+
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -85,10 +84,9 @@
     cursor: pointer;
     vertical-align: middle;
     color: white;
-    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
-    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background-color: #7e1bca;
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
+    
 }
 .plan-box {
     display: flex;

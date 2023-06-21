@@ -1,12 +1,13 @@
 .container{
-    background-color: rgb(210, 138, 247);
+    background-color: #E2474D;
     color: white;
     padding-top: 5%;
     margin-top: -10%;
 }
 .card{
     margin-top: 5%;
-    background-color: rgb(210, 138, 247);
+    background-color:#E2474D
+    ;
     color: white;
     border: none;
     padding-bottom: 5%;
@@ -20,8 +21,5 @@
     cursor: pointer;
     color: white;
     width: 200px;
-    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
-    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background: #A12AA0;
 }

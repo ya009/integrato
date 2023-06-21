@@ -1,26 +1,31 @@
-import { PrismaClient } from '@prisma/client'
+import { Prisma } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    const { nome, email, telefone, cidade } = req.body
 
-    const prisma = new PrismaClient()
+ 
 
+  if (req.method === "POST") {
+    const { nome, email, telefone, cidade } = req.body;
+    
     try {
-      const result = await prisma.ligar.create({
+      const novoLigar = await prisma.ligar.create({
         data: {
           nome,
           email,
           telefone,
           cidade,
-        }
-      })
-
-      res.status(200).json({ message: 'Mensagem enviada com sucesso!' })
+        },
+      });
+      res.status(201).json({ message: "Usuário cadastrado com sucesso!" });
     } catch (error) {
-      res.status(500).json({ error: 'Ocorreu um erro ao enviar a mensagem.' })
-    } finally {
-      await prisma.$disconnect()
+      console.error("Erro ao cadastrar usuário:", error);
+      res.status(500).json({ message: "Erro ao cadastrar usuário" });
     }
+  } else {
+    res.status(405).json({ message: "Método não permitido" });
   }
 }
+

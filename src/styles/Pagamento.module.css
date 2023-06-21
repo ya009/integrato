@@ -46,10 +46,8 @@
     cursor: pointer;
     color: white;
     width: 20%;
-    background: -webkit-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: -moz-linear-gradient(90deg, purple 0%, #7d14c4 100%);
-    background: -o-linear-gradient(90deg,purple 0%, #7d14c4 100%);
-    background: linear-gradient(90deg, purple 0%, #7d14c4 100%);
+    background-color: #7e1bca;
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
     margin-bottom: 2%;
     margin-top: 2%;
 }
