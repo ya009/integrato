@@ -29,7 +29,7 @@
 }
 .botao {
     display: inline-block;
-    border: none;
+    border: none !important;
     cursor: pointer;
     vertical-align: middle;
     color: white;

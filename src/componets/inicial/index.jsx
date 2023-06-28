@@ -1,10 +1,10 @@
-import { Card, CardGroup, Container} from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import styles from '@/styles/Inicio.module.css'
 import Form from 'react-bootstrap/Form';
 import Button from "react-bootstrap/Button";
 import { useRouter } from 'next/router';
 import Swal from 'sweetalert2'
-import { useState } from "react";
+
 
 
 
@@ -29,10 +29,10 @@ function Inicio(){
                 router.push('/campinacu/home');
                 break;
             case 'palmeiropolis':
-                router.push('/home');
+                router.push('/palmeiropolis/home');
                 break;
             case 'jau':
-                    router.push('/home');
+                    router.push('/jau/home');
                     break;
         }
     }

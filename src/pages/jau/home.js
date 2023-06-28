@@ -7,9 +7,9 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/jau/navegar'
 import Rodape from '@/componets/rodape'
 import Aplicativo from '@/componets/aplicativo'
-import Botao from '@/componets/botao'
 import BannerMeio from '@/componets/bannerMeio'
 import Slide from '@/componets/slide'
+import BannerNumero from '@/componets/bannerNumero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +27,7 @@ export default function Home() {
       <Navegacao/>
       <Aplicativo/>
       <BannerMeio/>
+      <BannerNumero/>
       <Slide/>
       <Rodape/>
       </div>

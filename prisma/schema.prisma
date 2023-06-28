@@ -41,4 +41,6 @@ model contrato {
   bairro         String @db.VarChar(100)
   complemento    String @db.VarChar(100)
   distrito       String @db.VarChar(100)
+  plano          String @db.VarChar(299)
+  vencimento     String @db.VarChar(299)
 }

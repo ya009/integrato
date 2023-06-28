@@ -22,9 +22,6 @@
     margin-top: 4%;
 }
 
-
-
-
 .box{
     display: flex;
     justify-content: center;
@@ -75,6 +72,7 @@
 }
 .img{
     width: 100%;
+    justify-content: center;
 }
 .titulo{
     justify-content: center;
@@ -91,4 +89,36 @@
     font-size:x-large;
 }
 
+.b{
+    height: 10%;
+}
+
+.fibra{
+    display: flex;
+    background-color: #7e1bca;
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.fibraDiv{
+    color: white;
+    width: 50%;
+}
+.telecom{
+    background-color: #7e1bca;
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
+
+}
+.telecomDiv{
+    color: white;
+    width: 50%;
+
+}
 

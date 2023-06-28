@@ -28,6 +28,8 @@ export default async function handler(req, res) {
           bairro: response.bairro,
           complemento: response.complemento,
           distrito:response.distrito,
+          plano: response.plano,
+          vencimento: response.vencimento
 
         },
       });

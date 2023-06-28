@@ -1,20 +1,33 @@
-.body {
+
+.div{
+    background-color: #e6e6e6 ;
+}
+.geral{
     background-color: #e6e6e6;
+
 }
 .container {
-    width: 100%;
+    background-color: #e6e6e6;
     border: none !important;
+    padding-top: 2%;
 }
 .tablePlan {
-    background-color:#e6e6e6;
+
     font: inherit;
     vertical-align: baseline;
     font-size: 20px;
     color: #3a3a39;
-
+    background-color: #e6e6e6;
 }
 .table{
+    justify-content: center;
     text-align: center;
+    border-bottom: 3px #ccc solid;
+    border-radius: 100%;
+}
+.tr{
+    border-bottom: 3px #ccc solid;
+    border-radius: 100%;
 }
 .titulo {
     font-weight: bold;
@@ -25,14 +38,12 @@
 .cima{
     display: flex;
     width: auto;
-    height: 90px;
 }
 .quant {
     font-size: 70px;
     font-weight: 900;
     background-color: #7e1bca;
-background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
-
+    background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,8 +51,6 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
     font-size: 24px;
     color: #464645;
     line-height: 80px;  
-    margin-right: 5%;                
-    
 }
 .cifrao {
     font-size: 24px;
@@ -51,7 +60,7 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
 }
 .inteiro {
     display: inline-block;
-    font-size: 70px;
+    font-size: 45px;
     font-weight: 900;
     color: #3a3a39;
 }
@@ -60,18 +69,12 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
     font-size: 40px;
     font-weight: bold;
     color: #3a3a39;
-    margin-top: -50px;
-    position: absolute;
+
 }
 .mes {
-    margin-top: -10%;
     font-size: 24px;
     color: #464645;
     display: inline-block;
-}
-.valor {
-    margin-top: -14%;
-    margin-left: 5%;
 }
 .box {
     display: inline-block;
@@ -79,6 +82,7 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
     vertical-align: middle;
 }
 .botao {
+    border: none;
     display: inline-block;
     border: #e6e6e6;
     cursor: pointer;
@@ -92,7 +96,7 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+
    
   }
 .boxRight{
@@ -100,10 +104,11 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
 }
 .descricao{
     vertical-align: middle;
-    text-align: center;
-    font-size: 16px;
+    text-align:justify;
+    font-size: 18px;
     line-height: 30px;
-    color: #3a3a39;
+    color: black;
+
 }
 .imagem{
     display: flex;
@@ -112,3 +117,4 @@ background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #
     margin: auto;
     margin-top: -7%;
 }
+

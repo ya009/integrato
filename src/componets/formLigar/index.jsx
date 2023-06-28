@@ -19,6 +19,13 @@ function FormLiga(){
             body: JSON.stringify ({nome, email, telefone, cidade}),
             headers:{'Content-Type': 'application/json'}
         })
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Dados enviados com sucesso!',
+            showConfirmButton: false,
+            timer: 1500
+          })
 
         }
     

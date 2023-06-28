@@ -1,5 +1,6 @@
 const { Image, Container, Button } = require("react-bootstrap");
 import styles from '@/styles/Banner.module.css'
+import Link from 'next/link';
 
 function BannerMeio(){
     return(
@@ -11,7 +12,10 @@ function BannerMeio(){
              <h1>
                 Procurando o <strong>melhor plano de internet</strong>, com velocidade e estabilidade de conexão?
              </h1>
+             <Link href= '/campinacu/planoFibra'>
              <Button className= {styles['plano']}>Conheça nossos planos</Button>
+             </Link>
+             
             </div>
             
         </Container>

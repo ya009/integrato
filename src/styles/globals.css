@@ -3,4 +3,11 @@
     padding-right: 5%;
     padding-bottom: 5%;
     background-color: #e6e6e6;
+  
+}
+body{
+    background-color: #e6e6e6;
+}
+.nav-link {
+    color:black !important;
 }

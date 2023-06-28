@@ -4,7 +4,6 @@ import { Card, CardGroup, Col, Container, Image, Row } from 'react-bootstrap';
 
 function Texto() {
     return (
-
         <Container>
         <div >
             <div className= {styles['tela']}>

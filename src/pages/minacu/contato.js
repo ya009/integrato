@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/minacu/navegar'
 import Rodape from '@/componets/rodape';
 import FormContato from '@/componets/formContato';
-import Localizacao from '@/componets/localizacao';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,7 +24,6 @@ export default function Contato() {
       <div className= {styles['body']}>
       <Navegacao/>
       <FormContato/>
-      <Localizacao/>
       <Rodape/>
       </div>
     </>

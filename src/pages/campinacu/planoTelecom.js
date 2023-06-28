@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Plano.module.css'
+
 import NavBar from '@/componets/campinacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/campinacu/navegar'
 import TablePlan from '@/componets/campinacu/tabelaPlano';
 import Rodape from '@/componets/rodape';
-import BannerHome from '@/componets/bannerHome';
+import BannerTelecom from '@/componets/bannerTelecom';
+import TableTelecom from '@/componets/campinacu/tabelaTelecom';
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,12 +23,10 @@ export default function Plano() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar/>
-      <div className= {styles['body']}>
       <Navegacao/>
-      <BannerHome/>
-      <TablePlan/>
+        <BannerTelecom/>
+      <TableTelecom/>
       <Rodape/>
-      </div>
     </>
   )
 }

@@ -6,7 +6,7 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/jau/navegar'
 import Rodape from '@/componets/rodape';
 import Contrate from '@/componets/contrateTitulo';
-import IconCompra from '@/componets/contrateIcon';
+import IconCompra from '@/componets/campinacu/contrateIcon';
 
 const inter = Inter({ subsets: ['latin'] })
 

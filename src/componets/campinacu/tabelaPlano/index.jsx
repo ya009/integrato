@@ -1,5 +1,5 @@
 import Table from 'react-bootstrap/Table';
-import styles from '@/styles/Plano.module.css'
+import styles from '@/styles/Fibra.module.css'
 import Button from 'react-bootstrap/Button';
 import { Card, Container } from 'react-bootstrap';
 import { useRouter } from 'next/router';
@@ -9,11 +9,13 @@ function TablePlan() {
     const router = useRouter();
 
     function handleClick(){
-        router.push('/contrate')
+        router.push('/campinacu/contrate')
     }
 
   return (
-    <Container>
+
+    <div className= {styles['div']}>
+    <Container className= {styles['geral']}>
         <Card className= {styles['container']}>
         <div className="table-responsive">
         <Table  className= {styles['tablePlan']} >
@@ -25,9 +27,9 @@ function TablePlan() {
                     </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Residencial</td>
-                    <td className= {styles['descricao']}> </td>
+                    <td className= {styles['descricao']}> Para você, que mora sozinho e pouco se transforma em muito. Este é o seu plano ideal.</td>
                     <td> 
                         <div className= {styles['plan-box']}>
                             <div className= {styles['box']}>
@@ -51,10 +53,10 @@ function TablePlan() {
                             </div>
                         </div>
                     </td>
-                </tr>
-                <tr>
+                </tr >
+                <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Residencial</td>
-                    <td className= {styles['descricao']}> </td>
+                    <td className= {styles['descricao']}> Sua casa necessita de muita entrega e velocidade? Este plano foi feito para você! Com 300 mega você pode tudo.  </td>
                     <td> 
                         <div className= {styles['plan-box']}>
                             <div className= {styles['box']}>
@@ -79,9 +81,9 @@ function TablePlan() {
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Residencial</td>
-                    <td className= {styles['descricao']}> + Paramount </td>
+                    <td className= {styles['descricao']}> Para você que além de internet curte um streaming, aqui nós de damos acesso a plataforma Paramount. </td>
                     <td> 
                         <div className= {styles['plan-box']}>
                             <div className= {styles['box']}>
@@ -106,9 +108,9 @@ function TablePlan() {
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Residencial</td>
-                    <td className= {styles['descricao']}> + Paramount</td>
+                    <td className= {styles['descricao']}> Trabalha em casa? Curte um jogo? E um Streaming? 1000 megas náo é para qualquer um, ainda mais com o acesso a plataforma Paramount. Este plano é para você</td>
                     <td> 
                         <div className= {styles['plan-box']}>
                             <div className= {styles['box']}>
@@ -133,7 +135,7 @@ function TablePlan() {
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Empresarial</td>
                     <td className= {styles['descricao']}> + IP fixo + prioridade na fila de atendimento e Configuração de até 3 equipamento incluso no plano e consultório especializada. </td>
                     <td> 
@@ -160,7 +162,7 @@ function TablePlan() {
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Empresarial</td>
                     <td className= {styles['descricao']}> + IP fixo + prioridade na fila de atendimento e Configuração de até 3 equipamento incluso no plano e consultório especializada. </td>
                     <td> 
@@ -191,7 +193,8 @@ function TablePlan() {
         </Table>
         </div>
     </Card>    
-    </Container>   
+    </Container>  
+    </div> 
   );
 }
 export default TablePlan;  

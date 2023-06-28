@@ -9,7 +9,7 @@ function TablePlan() {
     const router = useRouter();
 
     function handleClick(){
-        router.push('/contrate')
+        router.push('/jau/contrate')
     }
 
   return (

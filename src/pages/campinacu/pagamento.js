@@ -5,7 +5,7 @@ import NavBar from '@/componets/campinacu/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/campinacu/navegar'
 import Rodape from '@/componets/rodape';
-import FormCadastro from '@/componets/formOnline';
+import FormCadastro from '@/componets/campinacu/formOnline';
 import TituloOnline from '@/componets/tituloOnline';
 import Pagamento from '@/componets/pagamento';
 

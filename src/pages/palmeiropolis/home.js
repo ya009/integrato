@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from '@/componets/palmeiropolis/navBar'
@@ -7,9 +6,9 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/palmeiropolis/navegar'
 import Rodape from '@/componets/rodape'
 import Aplicativo from '@/componets/aplicativo'
-import Botao from '@/componets/botao'
 import BannerMeio from '@/componets/bannerMeio'
 import Slide from '@/componets/slide'
+import BannerNumero from '@/componets/bannerNumero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +26,7 @@ export default function Home() {
       <Navegacao/>
       <Aplicativo/>
       <BannerMeio/>
+      <BannerNumero/>
       <Slide/>
       <Rodape/>
       </div>

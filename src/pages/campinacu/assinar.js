@@ -1,17 +1,16 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Confirmacao.module.css'
+import styles from '@/styles/Online.module.css'
 import NavBar from '@/componets/campinacu/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/campinacu/navegar'
 import Rodape from '@/componets/rodape';
-import FormContato from '@/componets/formContato';
-import Localizacao from '@/componets/localizacao';
-
+import FormCadastro from '@/componets/campinacu/formOnline';
+import TituloOnline from '@/componets/tituloOnline';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Contato() {
+export default function Assinar() {
   return (
     <>
       <Head>
@@ -23,8 +22,8 @@ export default function Contato() {
       <NavBar/>
       <div className= {styles['body']}>
       <Navegacao/>
-      <FormContato/>
-      <Localizacao/>
+      <TituloOnline/>
+      <FormCadastro/>
       <Rodape/>
       </div>
     </>

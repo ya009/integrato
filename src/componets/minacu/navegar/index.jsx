@@ -1,6 +1,8 @@
 import { Image } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import { useRouter } from 'next/router';
+import { NavDropdown } from 'react-bootstrap';
+import styles from '@/styles/Plano.module.css'
 
 function Navegacao() {
 
@@ -24,9 +26,10 @@ function Navegacao() {
       <Nav.Item>
         <Nav.Link href="/minacu/institucional" eventKey="link-1" style={{ color: 'black'}}> Institucional</Nav.Link>
       </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href='/minacu/plano' eventKey="link-2" style={{ color: 'black'}}> Planos</Nav.Link>
-      </Nav.Item>
+      <NavDropdown title = "Planos" className= {styles['drop']}>
+        <NavDropdown.Item href='/minacu/planoFibra'>Fibra Óptica</NavDropdown.Item>
+        <NavDropdown.Item href='/minacu/planoTelecom'>Telecom</NavDropdown.Item>
+      </NavDropdown>
       <Nav.Item>
         <Nav.Link href='/minacu/contato' eventKey="link-3" style={{ color: 'black'}}> Contato</Nav.Link>
       </Nav.Item>

@@ -6,8 +6,6 @@ import Row from 'react-bootstrap/Row';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
-
-
 function FormCadastro(){
 
     const [nome1, setNome1] = useState('')
@@ -26,11 +24,8 @@ function FormCadastro(){
     const [complemento1, setComplemento1] = useState('')
     const [distrito1, setDistrito1] = useState('')
 
-
     const enviar = async (e) => {
-        // e.preventDefault()
         console.log(nome1)
-
         const addOnline = {
             nome: nome1,
             email: email1,
@@ -48,27 +43,20 @@ function FormCadastro(){
             complemento: complemento1,
             distrito: distrito1,
         }
-
         const res = await fetch ('/api/online', {
             method: 'POST',
             body: JSON.stringify (addOnline),
             headers:{'Content-Type': 'application/json'}
         })
-
         }
-
     const router = useRouter();
-
     function handleClick(){
-        router.push('/pagamento')
+        router.push('/palmeiropolis/pagamento')
     }
-
     function click(){
         enviar()
         handleClick()
-        
     }
-
     return(
         <Container className= {styles['container']}>
             <Stack direction="horizontal" gap={6}>
@@ -79,12 +67,10 @@ function FormCadastro(){
                 <div className= {styles['numero']}>3</div>
                 <div className= {styles['nome']}>Confirmação</div>
             </Stack>
-
             <div className= {styles['box']}>
                 <p className= {styles['dados']}>DADOS PESSOAIS</p>
                 <div className= {styles['traco']}></div>
             </div>
-
             <Form>
                 <Row className="mb-4">
                     <Col>

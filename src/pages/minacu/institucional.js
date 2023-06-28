@@ -6,7 +6,7 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/minacu/navegar'
 import Texto from '@/componets/texto';
 import Rodape from '@/componets/rodape';
-import Banner from '@/componets/banner';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,9 +23,7 @@ export default function Institucional() {
       <NavBar/>
       <div className= {styles['body']}>
       <Navegacao/>
-      <Texto/>
-      <Banner/>
-      
+      <Texto/>  
       <Rodape/>
       </div>
       

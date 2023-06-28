@@ -11,10 +11,10 @@ function IconCompra(){
     const router = useRouter();
 
     function handleClick(){
-        router.push('/ligar')
+        router.push('/minacu/ligar')
     }
     function handleClick2(){
-        router.push('/assinar')
+        router.push('/minacu/assinar')
     }
     
 
