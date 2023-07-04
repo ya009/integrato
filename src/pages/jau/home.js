@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import NavBar from '@/componets/jau/navBar'
+import NavBar from '@/componetns/jau/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/jau/navegar'
-import Rodape from '@/componets/jau/rodape'
-import Aplicativo from '@/componets/aplicativo'
-import BannerMeio from '@/componets/bannerMeio'
-import Slide from '@/componets/slide'
-import BannerNumero from '@/componets/bannerNumero'
+import Navegacao from '@/componetns/jau/navegar'
+import Rodape from '@/componetns/jau/rodape'
+import Aplicativo from '@/componetns/aplicativo'
+import BannerMeio from '@/componetns/bannerMeio'
+import Slide from '@/componetns/slide'
+import BannerNumero from '@/componetns/bannerNumero'
 
 const inter = Inter({ subsets: ['latin'] })
 

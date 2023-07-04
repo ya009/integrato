@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Confirmacao.module.css'
-import NavBar from '@/componets/palmeiropolis/navBar'
+import NavBar from '@/componetns/palmeiropolis/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/palmeiropolis/navegar'
-import Rodape from '@/componets/palmeiropolis/rodape';
-import FormContato from '@/componets/formContato';
-import Localizacao from '@/componets/localizacao';
+import Navegacao from '@/componetns/palmeiropolis/navegar'
+import Rodape from '@/componetns/palmeiropolis/rodape';
+import FormContato from '@/componetns/formContato';
+import Localizacao from '@/componetns/localizacao';
 
 
 const inter = Inter({ subsets: ['latin'] })

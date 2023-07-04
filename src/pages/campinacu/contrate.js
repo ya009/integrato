@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Contrate.module.css'
-import NavBar from '@/componets/campinacu/navBar'
+import NavBar from '@/componetns/campinacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/campinacu/navegar'
-import Rodape from '@/componets/campinacu/rodape';
-import Contrate from '@/componets/contrateTitulo';
-import IconCompra from '@/componets/campinacu/contrateIcon';
+import Navegacao from '@/componetns/campinacu/navegar'
+import Rodape from '@/componetns/campinacu/rodape';
+import Contrate from '@/componetns/contrateTitulo';
+import IconCompra from '@/componetns/campinacu/contrateIcon';
 
 const inter = Inter({ subsets: ['latin'] })
 

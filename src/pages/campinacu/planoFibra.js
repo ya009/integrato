@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Plano.module.css'
-import NavBar from '@/componets/campinacu/navBar'
+import NavBar from '@/componetns/campinacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/campinacu/navegar'
-import TablePlan from '@/componets/campinacu/tabelaPlano';
-import Rodape from '@/componets/campinacu/rodape';
-import BannerFibra from '@/componets/bannerFibra';
+import Navegacao from '@/componetns/campinacu/navegar'
+import TablePlan from '@/componetns/campinacu/tabelaPlano';
+import Rodape from '@/componetns/campinacu/rodape';
+import BannerFibra from '@/componetns/bannerFibra';
 
 
 const inter = Inter({ subsets: ['latin'] })

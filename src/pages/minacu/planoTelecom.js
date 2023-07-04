@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Plano.module.css'
-import NavBar from '@/componets/minacu/navBar'
+import NavBar from '@/componetns/minacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/minacu/navegar'
-import TablePlan from '@/componets/minacu/tabelaPlano';
-import Rodape from '@/componets/minacu/rodape';
-import BannerTelecom from '@/componets/bannerTelecom';
+import Navegacao from '@/componetns/minacu/navegar'
+import TablePlan from '@/componetns/minacu/tabelaPlano';
+import Rodape from '@/componetns/minacu/rodape';
+import BannerTelecom from '@/componetns/bannerTelecom';
 
 
 

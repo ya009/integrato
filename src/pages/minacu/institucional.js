@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Institucional.module.css'
-import NavBar from '@/componets/minacu/navBar'
+import NavBar from '@/componetns/minacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/minacu/navegar'
-import Texto from '@/componets/texto';
-import Rodape from '@/componets/minacu/rodape';
+import Navegacao from '@/componetns/minacu/navegar'
+import Texto from '@/componetns/texto';
+import Rodape from '@/componetns/minacu/rodape';
 
 
 

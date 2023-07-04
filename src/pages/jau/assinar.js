@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Online.module.css'
-import NavBar from '@/componets/jau/navBar'
+import NavBar from '@/componetns/jau/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/jau/navegar'
-import Rodape from '@/componets/jau/rodape';
-import FormCadastro from '@/componets/jau/formOnline';
-import TituloOnline from '@/componets/tituloOnline';
+import Navegacao from '@/componetns/jau/navegar'
+import Rodape from '@/componetns/jau/rodape';
+import FormCadastro from '@/componetns/jau/formOnline';
+import TituloOnline from '@/componetns/tituloOnline';
 
 const inter = Inter({ subsets: ['latin'] })
 
