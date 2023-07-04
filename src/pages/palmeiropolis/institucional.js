@@ -5,7 +5,7 @@ import NavBar from '@/componets/palmeiropolis/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/palmeiropolis/navegar'
 import Texto from '@/componets/texto';
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/palmeiropolis/rodape';
 
 
 

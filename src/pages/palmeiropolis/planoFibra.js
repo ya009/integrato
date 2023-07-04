@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Plano.module.css'
-import NavBar from '@/componets/campinacu/navBar'
+import NavBar from '@/componets/palmeiropolis/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componets/campinacu/navegar'
-import TablePlan from '@/componets/campinacu/tabelaPlano';
-import Rodape from '@/componets/rodape';
+import Navegacao from '@/componets/palmeiropolis/navegar'
+import TablePlan from '@/componets/palmeiropolis/tabelaPlano';
+import Rodape from '@/componets/palmeiropolis/rodape';
 import BannerFibra from '@/componets/bannerFibra';
 
 

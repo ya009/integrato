@@ -1,10 +1,12 @@
 import styles from '@/styles/Online.module.css'
-import { Button, Container, Stack } from 'react-bootstrap';
+import { Accordion, Button, Container, Stack } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import ButtonGroup from 'react-bootstrap';
+import Swal from 'sweetalert2';
 
 function FormCadastro(){
 
@@ -23,10 +25,43 @@ function FormCadastro(){
     const [bairro1, setBairro1] = useState('')
     const [complemento1, setComplemento1] = useState('')
     const [distrito1, setDistrito1] = useState('')
-
+    const [plano1, setPlano1] = useState('')
+    const [venc1, setVenc1] = useState('')
+    
     const enviar = async (e) => {
-        console.log(nome1)
-        const addOnline = {
+
+        if(nome1 === '', 
+           email1 === '',
+           telefoneRes1 === '', 
+           telefoneCom1 === '',
+           celular1 === '',
+           rg1 === '',
+           cpf1 === '',
+           dataNasc1 === '', 
+           cidade1 === '', 
+           cep1 === '', 
+           rua1 === '',
+           numero1 === '',
+           bairro1 === '',
+           plano1=== '',venc1 === '' ){
+            Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'deu ruim',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        }else{
+            Swal.fire(
+
+                    'Dados enviados com sucesso',
+                    'Logo entraremos em contato!',
+                    'success',
+                    '2000000'
+              
+              )
+            console.log(nome1)
+            const addOnline = {
             nome: nome1,
             email: email1,
             telefoneRes: telefoneRes1,
@@ -42,125 +77,180 @@ function FormCadastro(){
             bairro: bairro1,
             complemento: complemento1,
             distrito: distrito1,
+            plano: plano1,
+            vencimento: venc1,
         }
         const res = await fetch ('/api/online', {
             method: 'POST',
             body: JSON.stringify (addOnline),
             headers:{'Content-Type': 'application/json'}
         })
+
         }
-    const router = useRouter();
-    function handleClick(){
-        router.push('/palmeiropolis/pagamento')
+ 
     }
-    function click(){
-        enviar()
-        handleClick()
+  
+    const [validated, setValidated] = useState(false);
+
+   const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
     }
+
+    setValidated(true);
+  };
+           
+    
     return(
         <Container className= {styles['container']}>
-            <Stack direction="horizontal" gap={6}>
-                <strong className= {styles['numero']}>1</strong>
-                <strong className= {styles['nome']}>Cadastro</strong>
-                <div className= {styles['numero']}>2</div> 
-                <div className= {styles['nome']}>Cobrança</div>
-                <div className= {styles['numero']}>3</div>
-                <div className= {styles['nome']}>Confirmação</div>
-            </Stack>
-            <div className= {styles['box']}>
-                <p className= {styles['dados']}>DADOS PESSOAIS</p>
-                <div className= {styles['traco']}></div>
-            </div>
-            <Form>
-                <Row className="mb-4">
-                    <Col>
-                        <Form.Label>NOME COMPLETO</Form.Label>
-                        <Form.Control type='name' onChange={(e) => setNome1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>EMAIL</Form.Label>
-                        <Form.Control type='email' onChange={(e) => setEmail1(e.target.value)} />
-                    </Col>
-                </Row>
-                <Row className="mb-4">
-                    <Col>
-                        <Form.Label>TELEFONE RESIDENCIAL</Form.Label>
-                        <Form.Control type='tel'onChange={(e) => setTelefoneRes1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>TELEFONE COMERCIAL</Form.Label>
-                        <Form.Control type='tel' onChange={(e) => setTelefoneCom1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>CELULAR</Form.Label>
-                        <Form.Control type='tel' onChange={(e) => setCelular1(e.target.value)}/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Form.Label>RG</Form.Label>
-                        <Form.Control onChange={(e) => setRg1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>CPF</Form.Label>
-                        <Form.Control type="text" placeholder="000.000.000-00" onChange={(e) => setCpf1(e.target.value)} />
-                    </Col>
-                    <Col>
-                        <Form.Label>DATA DE NASCIMENTO</Form.Label>
-                        <Form.Control type='date' onChange={(e) => setDataNasc1(e.target.value)}/>
-                    </Col>
-                </Row>
-            </Form> 
-            <div className= {styles['box']}>
-                <p className= {styles['dados']}>Endereço</p>
-                <div className= {styles['traco']}></div>
-            </div>
-            <Form>
-                <Row className="mb-4">
-                    <Col>
-                        <Form.Label>CIDADE/UF</Form.Label>
-                        <Form.Select onChange={(e) => setCidade1(e.target.value)}>
-                                <option> Cidade / UF</option>
-                                <option>Minaçu(GO) </option>
-                                <option>Campinaçu(GO) </option>
-                                <option>Palmeirópolis(TO) </option>
-                                <option>Jáu(TO) </option>
-                            </Form.Select>
-                    </Col>
-                    <Col>
-                        <Form.Label>CEP</Form.Label>
-                        <Form.Control  onChange={(e) => setCep1(e.target.value)}/>
-                    </Col>
-                </Row>
-                <Row className="mb-4">
-                    <Col>
-                        <Form.Label>RUA</Form.Label>
-                        <Form.Control type='text' onChange={(e) => setRua1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>NÚMERO</Form.Label>
-                        <Form.Control onChange={(e) => setNumero1(e.target.value)}/>
-                    </Col>
-                </Row>
-                <Row className="mb-4">
-                    <Col>
-                        <Form.Label>BAIRRO</Form.Label>
-                        <Form.Control onChange={(e) => setBairro1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>COMPLEMENTO</Form.Label>
-                        <Form.Control type="text" onChange={(e) => setComplemento1(e.target.value)}/>
-                    </Col>
-                    <Col>
-                        <Form.Label>DISTRITO</Form.Label>
-                        <Form.Control type='text' onChange={(e) => setDistrito1(e.target.value)}/>
-                    </Col>
-                </Row>
-            </Form>
-            <div className="d-flex justify-content-center">
-                <Button className= {styles['botao']} variant='secondary' size='lg' onClick={click}> Continuar</Button>
-            </div>
+                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <div className= {styles['box']}>
+                        <p className= {styles['dados']}>DADOS PESSOAIS</p>
+                        <div className= {styles['traco']}></div>
+                    </div>
+                        <Row className="mb-4">
+                            <Col>
+                                <Form.Label>NOME COMPLETO</Form.Label>
+                                <Form.Control required type='text' onChange={(e) => setNome1(e.target.value)}/>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            <Col>
+                                <Form.Label>EMAIL</Form.Label>
+                                <Form.Control required type='email' onChange={(e) => setEmail1(e.target.value)} />
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                        </Row>
+                        <Row className="mb-4">
+                            <Col>
+                                <Form.Label>TELEFONE RESIDENCIAL</Form.Label>
+                                <Form.Control required type='tel'onChange={(e) => setTelefoneRes1(e.target.value)}/>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            <Col>
+                                <Form.Label>TELEFONE COMERCIAL</Form.Label>
+                                <Form.Control required type='tel' onChange={(e) => setTelefoneCom1(e.target.value)}/>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            <Col>
+                                <Form.Label>CELULAR</Form.Label>
+                                <Form.Control required type='tel' onChange={(e) => setCelular1(e.target.value)}/>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Label>RG</Form.Label>
+                                <Form.Control required onChange={(e) => setRg1(e.target.value)}/>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            <Col>
+                                <Form.Label>CPF</Form.Label>
+                                <Form.Control required type="text" placeholder="000.000.000-00" onChange={(e) => setCpf1(e.target.value)} />
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            <Col>
+                                <Form.Label>DATA DE NASCIMENTO</Form.Label>
+                                <Form.Control required type='date' onChange={(e) => setDataNasc1(e.target.value)}/>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                        </Row>
+                        <div className= {styles['box']}>
+                            <p className= {styles['dados']}>ENDEREÇO</p>
+                            <div className= {styles['traco']}></div>
+                        </div>
+                        <Row className="mb-4">
+                            <Col>
+                                <Form.Label>CIDADE/UF</Form.Label>
+                                <Form.Select required onChange={(e) => setCidade1(e.target.value)}>
+                                    <option> </option>
+                                        <option>Campinaçu(GO) </option>
+                                        <option>Minaçu(GO) </option>
+                                        <option>Palmeirópolis(TO) </option>
+                                        <option>Jáu(TO) </option>
+                                </Form.Select>
+                                <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                                <Col>
+                                    <Form.Label>CEP</Form.Label>
+                                    <Form.Control  required onChange={(e) => setCep1(e.target.value)}/>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col>
+                                    <Form.Label>RUA</Form.Label>
+                                    <Form.Control required type='text' onChange={(e) => setRua1(e.target.value)}/>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                                <Col>
+                                    <Form.Label>NÚMERO</Form.Label>
+                                    <Form.Control required onChange={(e) => setNumero1(e.target.value)}/>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col>
+                                    <Form.Label>BAIRRO</Form.Label>
+                                    <Form.Control required onChange={(e) => setBairro1(e.target.value)}/>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                                <Col>
+                                    <Form.Label>COMPLEMENTO</Form.Label>
+                                    <Form.Control required type="text" onChange={(e) => setComplemento1(e.target.value)}/>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                                <Col>
+                                    <Form.Label>DISTRITO</Form.Label>
+                                    <Form.Control required type='text' onChange={(e) => setDistrito1(e.target.value)}/>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                                </Col>
+                            </Row>
+                            <div className= {styles['box']}>
+                                <p className= {styles['dados']}>DADOS DA COBRANÇA</p>
+                                <div className= {styles['traco']}></div>
+                            </div>
+                            <Row>
+                            <Col>
+                                    <Form.Label>PLANO</Form.Label>
+                                    <Form.Select required onChange={(e) => setPlano1(e.target.value)}>
+                                        <option> </option>
+                                        <option> Residencial - 50 mega - R$89,90</option>
+                                        <option> Residencial - 300 mega - R$99,90</option>
+                                        <option> Residencial - 400 mega - R$119,90</option>
+                                        <option> Residencial - 1000 mega - R$169,90</option>
+                                        <option> Empresarial - 400 mega - R$119,90</option>
+                                        <option> Empresarial - 1000 mega - R$349,90</option>
+                                    </Form.Select>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            <Col>
+                                <Form.Label>VENCIMENTO</Form.Label>
+                                    <Form.Select required onChange={(e) => setVenc1(e.target.value)}>
+                                        <option> </option>
+                                        <option>05</option>
+                                        <option> 10</option> 
+                                        <option>15</option>           
+                                    </Form.Select>
+                                    <Form.Control.Feedback type='invalid'>*Campo obrigatorio</Form.Control.Feedback>
+                            </Col>
+                            </Row>
+                        <div>
+                            <p className= {styles['dados']}>BOLETO REGISTRADO</p>
+                        </div>
+                            <Form.Check type="checkbox" label="Boleto Registrado " checked/>
+                            <div>
+                            <p className= {styles['dados']}>TERMOS E CONDIÇÕES</p>
+                            <span className= {styles['termo']}>Ao finalizar o seu pedido, você estará concordando com os nossos <a style={{ color: 'purple'}}>Termos e condições </a></span>
+                        </div>
+
+                            <div className="d-flex justify-content-center">
+                                <Button className= {styles['botao']} variant='secondary' size='lg' type='submit'  onClick={enviar}> Finalizar</Button>
+                        </div>
+                        </Form>    
         </Container>
     )
 }
+
 export default FormCadastro;

@@ -5,9 +5,7 @@ import NavBar from '@/componets/jau/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/jau/navegar'
 import Texto from '@/componets/texto';
-import Rodape from '@/componets/rodape';
-
-
+import Rodape from '@/componets/jau/rodape';
 
 const inter = Inter({ subsets: ['latin'] })
 

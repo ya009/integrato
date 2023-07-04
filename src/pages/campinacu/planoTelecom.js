@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-
 import NavBar from '@/componets/campinacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/campinacu/navegar'
 import TablePlan from '@/componets/campinacu/tabelaPlano';
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/campinacu/rodape';
 import BannerTelecom from '@/componets/bannerTelecom';
 import TableTelecom from '@/componets/campinacu/tabelaTelecom';
 

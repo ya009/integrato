@@ -1,4 +1,4 @@
-const { Image, Container, Button } = require("react-bootstrap");
+const { Image, Button } = require("react-bootstrap");
 import styles from '@/styles/Banner.module.css'
 
 function Aplicativo(){
@@ -22,10 +22,10 @@ function Aplicativo(){
                   
                 </div>
                 <Button style={{ border: 'none', background: 'none', padding: 0 }} onClick={playStore}>
-                <Image src='/gp.png'  width={130} height={50} className= {styles['botGP']}></Image>
+                <Image src='/gp.png'  width={110} height={50} className= {styles['botGP']}></Image>
                 </Button>
                 <Button style={{ border: 'none', background: 'none' }} onClick={appStore}>
-                <Image src='/AS.png' width={130} height={50} className= {styles['botGP']}></Image>
+                <Image src='/AS.png' width={110} height={50} className= {styles['botGP']}></Image>
                 </Button>
               
               </div> 

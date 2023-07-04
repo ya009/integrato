@@ -1,11 +1,9 @@
 import styles from '@/styles/Online.module.css'
-import { Accordion, Button, Container, Stack } from 'react-bootstrap';
+import { Button, Container, Stack } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { useRouter } from 'next/router';
 import { useState } from 'react';
-import ButtonGroup from 'react-bootstrap';
 import Swal from 'sweetalert2';
 
 function FormCadastro(){

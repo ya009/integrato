@@ -10,9 +10,6 @@ function BannerTelecom(){
                <h2>Atendimento pela Integrato Fibra</h2>
                <h2>Atendimento pela Integrato Fibra</h2>
                <h2>Portabilidade em todo Brasil</h2>
-                
-
-
             </div>
         </div>
 

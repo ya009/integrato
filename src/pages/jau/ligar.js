@@ -4,7 +4,7 @@ import styles from '@/styles/Ligar.module.css'
 import NavBar from '@/componets/jau/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/jau/navegar'
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/jau/rodape';
 import FormLiga from '@/componets/formLigar';
 
 const inter = Inter({ subsets: ['latin'] })

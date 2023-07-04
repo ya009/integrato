@@ -1,11 +1,11 @@
 import styles from '@/styles/Card.module.css'
-import { Card, CardGroup, Col, Container, Image, Row } from 'react-bootstrap';
+import { Container, Image} from 'react-bootstrap';
 
 
 function Texto() {
     return (
         <Container>
-        <div >
+        <div  className= {styles['div']}>
             <div className= {styles['tela']}>
                 <div className= {styles['box1']}>
                     <h1 className= {styles['titulo']}>

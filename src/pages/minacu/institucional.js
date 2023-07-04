@@ -5,7 +5,7 @@ import NavBar from '@/componets/minacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/minacu/navegar'
 import Texto from '@/componets/texto';
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/minacu/rodape';
 
 
 

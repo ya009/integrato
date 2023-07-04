@@ -1,11 +1,10 @@
-
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Confirmacao.module.css'
 import NavBar from '@/componets/jau/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/jau/navegar'
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/jau/rodape';
 import FormContato from '@/componets/formContato';
 import Localizacao from '@/componets/localizacao';
 

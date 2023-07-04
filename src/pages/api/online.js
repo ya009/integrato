@@ -4,8 +4,6 @@ const prisma = new PrismaClient();
 
 export default async function handler(req, res) {
 
- 
-
   if (req.method === "POST") {
     const response = req.body;
     console.log(response)

@@ -4,8 +4,8 @@ import styles from '@/styles/Online.module.css'
 import NavBar from '@/componets/palmeiropolis/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/palmeiropolis/navegar'
-import Rodape from '@/componets/rodape';
-import FormCadastro from '@/componets/campinacu/formOnline';
+import Rodape from '@/componets/palmeiropolis/rodape';
+import FormCadastro from '@/componets/palmeiropolis/formOnline';
 import TituloOnline from '@/componets/tituloOnline';
 
 const inter = Inter({ subsets: ['latin'] })

@@ -4,7 +4,7 @@ import styles from '@/styles/Confirmacao.module.css'
 import NavBar from '@/componets/palmeiropolis/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/palmeiropolis/navegar'
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/palmeiropolis/rodape';
 import FormContato from '@/componets/formContato';
 import Localizacao from '@/componets/localizacao';
 

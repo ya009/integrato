@@ -4,7 +4,7 @@ import styles from '@/styles/Confirmacao.module.css'
 import NavBar from '@/componets/campinacu/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/campinacu/navegar'
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/campinacu/rodape';
 import FormContato from '@/componets/formContato';
 import Localizacao from '@/componets/localizacao';
 

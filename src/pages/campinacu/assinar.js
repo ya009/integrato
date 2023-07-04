@@ -4,7 +4,7 @@ import styles from '@/styles/Online.module.css'
 import NavBar from '@/componets/campinacu/navBar'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/campinacu/navegar'
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/campinacu/rodape';
 import FormCadastro from '@/componets/campinacu/formOnline';
 import TituloOnline from '@/componets/tituloOnline';
 

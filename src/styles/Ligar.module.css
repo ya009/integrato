@@ -23,6 +23,7 @@
 .card{
     background-color: #e6e6e6 !important;
     border:#e6e6e6 !important ;
+    margin-top: -2%;
     
 }
 .botao{
@@ -35,3 +36,4 @@
     background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
 
 }
+

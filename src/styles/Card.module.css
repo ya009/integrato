@@ -14,7 +14,7 @@
     align-items: center;
     margin-left: 1%;
     margin-bottom: 5%;
-
+    
 }
 .titulo{
     color: #7e1bca;
@@ -23,17 +23,16 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3%;
-
 }
 .box1{
     flex:1;
     margin-right: 10%;
     align-items: center;
-
 }
 .box2{
     flex:1;
-    justify-content: center
-
-    
+    justify-content: center 
+}
+.div{
+    max-width: 100%;
 }

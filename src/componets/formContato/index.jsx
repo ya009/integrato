@@ -18,7 +18,7 @@ function FormContato(){
         <Container className= {styles['container']} >
             <CardGroup className= {styles['cardG']}>
                 <Card className= {styles['card']}>
-                    <div>
+                    <div className= {styles['imgDiv']}>
                         <Image src='/contato.png' className= {styles['img']}></Image>
                         <h1 className= {styles['texto']}>Este é seu canal de comunicação com a nossa equipe.</h1>
                     </div>
@@ -27,15 +27,19 @@ function FormContato(){
                 <Card className= {styles['card']}>
                     <Form >
                         <Form.Group className="mb-3" >
+                            <Form.Label>Nome Completo</Form.Label>
                             <Form.Control type="name" placeholder="Nome" /> 
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>E-mail</Form.Label>
                             <Form.Control type="email" placeholder="E-mail" />  
                         </Form.Group>
                         <Form.Group className="mb-3" >
+                        <Form.Label>Telefone</Form.Label>
                             <Form.Control type="phone" placeholder="Telefone" />
                         </Form.Group>
                         <Form.Group className="mb-3">
+                        <Form.Label>Cidade/UF</Form.Label>
                             <Form.Select >
                                 <option> Cidade / UF</option>
                                 <option>Minaçu(GO) </option>
@@ -45,6 +49,7 @@ function FormContato(){
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className="mb-3" >
+                        <Form.Label>Mensagem</Form.Label>
                             <Form.Control as= 'textarea' placeholder="(Escreva sua mensagem aqui)" rows={6} />
                         </Form.Group>
                     </Form>

@@ -4,9 +4,9 @@ import styles from '@/styles/Contrate.module.css'
 import NavBar from '@/componets/minacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/minacu/navegar'
-import Rodape from '@/componets/rodape';
+import Rodape from '@/componets/minacu/rodape';
 import Contrate from '@/componets/contrateTitulo';
-import IconCompra from '@/componets/campinacu/contrateIcon';
+import IconCompra from '@/componets/minacu/contrateIcon';
 
 const inter = Inter({ subsets: ['latin'] })
 

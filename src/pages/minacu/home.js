@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 import NavBar from '@/componets/minacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componets/minacu/navegar'
-import Rodape from '@/componets/rodape'
+import Rodape from '@/componets/minacu/rodape'
 import Aplicativo from '@/componets/aplicativo'
 import BannerMeio from '@/componets/bannerMeio'
 import Slide from '@/componets/slide'

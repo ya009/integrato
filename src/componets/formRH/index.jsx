@@ -27,15 +27,19 @@ function FormRH(){
                 <Card className= {styles['card']}>
                     <Form >
                         <Form.Group className="mb-3" >
+                        <Form.Label>Nome Completo</Form.Label>
                             <Form.Control type="name" placeholder="Nome" /> 
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>E-mail</Form.Label>
                             <Form.Control type="email" placeholder="E-mail" />  
                         </Form.Group>
                         <Form.Group className="mb-3" >
+                        <Form.Label>Telefone </Form.Label>
                             <Form.Control type="phone" placeholder="Telefone" />
                         </Form.Group>
                         <Form.Group className="mb-3">
+                        <Form.Label>Cidade/UF</Form.Label>
                             <Form.Select >
                                 <option> Cidade / UF</option>
                                 <option>Minaçu(GO) </option>
@@ -45,9 +49,12 @@ function FormRH(){
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className="mb-3" >
-                            <Form.Control type="text" placeholder="Anexe aqui o seu curriculum" />
+                        <Form.Label>Currículo</Form.Label>
+                            <Form.Control type="file" placeholder="Anexe aqui o seu curriculum" />
                         </Form.Group>
                         <Form.Group className="mb-3" >
+                        <Form.Label>Poque você quer fazer parte da equipe Integrato?</Form.Label>
+
                             <Form.Control type="text" placeholder="Por que você quer fazer parte da equipe Integrato?" />
                         </Form.Group>
                     </Form>
