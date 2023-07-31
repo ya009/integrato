@@ -30,14 +30,11 @@ function Slide() {
       <h1>
         Saiba mais sobre o maior <strong>provedor de internet</strong> do interior do Brasil.
       </h1>
-      <Link href= '/campinacu/institucional'>
+      <Link href= '/palmeiropolis/institucional'>
       <Button className= {styles['botBio']}>Conheça a Integrato</Button>
       </Link>
-      
     </div>
-
     </Container>
-    
   );
 }
 export default Slide;

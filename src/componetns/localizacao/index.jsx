@@ -8,7 +8,7 @@ function Localizacao(){
         window.open("https://www.google.com/maps/place/Integrato+Fibra/@-13.5339847,-48.2272769,16.42z/data=!4m6!3m5!1s0x93468522e67cb409:0x56fae0da2a3dffb2!8m2!3d-13.5341954!4d-48.2222509!16s%2Fg%2F11bbrkl2d8")
     }
     function link1(){
-        window.open("https://www.google.com/maps/place/Integrato+Fibra/@-13.5339847,-48.2272769,16.42z/data=!4m6!3m5!1s0x93468522e67cb409:0x56fae0da2a3dffb2!8m2!3d-13.5341954!4d-48.2222509!16s%2Fg%2F11bbrkl2d8")
+        window.open("https://goo.gl/maps/q2q34ZLLerHTUEEw6")
     }
 
     return(
@@ -24,7 +24,7 @@ function Localizacao(){
                 <div>
                     <h3>Campinaçu - GO</h3>
                     <p>Av. Francisco Irene da Silva, Centro CEP:76440-000</p>
-                    <Button className= {styles['botao']}>Ver no mapa</Button> 
+                    <Button className= {styles['botao']} onClick={link1}>Ver no mapa</Button> 
                 </div>
                 <div>
                     <h3>Palmeirópolis - TO</h3>

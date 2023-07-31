@@ -1,7 +1,7 @@
 import { Image, NavDropdown } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import { useRouter } from 'next/router';
-
+import styles from '@/styles/Home.module.css'
 
 function Navegacao() {
 
@@ -25,10 +25,10 @@ function Navegacao() {
         <Image src='/Integrato_01.png'  width={250} height={60} onClick={Home}></Image>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link  href="/campinacu/institucional" eventKey="link-1"  style={{ color: 'black '}}> Institucional</Nav.Link>
+        <Nav.Link  href="/campinacu/institucional" eventKey="link-1"  className= {styles['nav']}> Institucional</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <NavDropdown title = "Planos" eventKey="link-2" color='#0000' >
+      <NavDropdown title = "Planos" eventKey="link-2" >
         <NavDropdown.Item href='/campinacu/planoFibra' >Fibra Óptica</NavDropdown.Item>
         <NavDropdown.Item href='/campinacu/planoTelecom' >Telecom</NavDropdown.Item>
       </NavDropdown>

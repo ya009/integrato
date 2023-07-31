@@ -3,6 +3,7 @@
     padding-right: 5%;
     padding-bottom: 5%;
     background-color: #e6e6e6;
+    border-bottom: black;
   
 }
 body{
@@ -10,4 +11,5 @@ body{
 }
 .nav-link {
     color:black !important;
+    border-bottom: black !important; 
 }

@@ -83,7 +83,7 @@ function TablePlan() {
                 </tr>
                 <tr className= {styles['tr']}>
                     <td className= {styles['titulo']}> Residencial</td>
-                    <td className= {styles['descricao']}> Para você que além de internet curte um streaming, aqui nós de damos acesso a plataforma Paramount. </td>
+                    <td className= {styles['descricao']}> Para você que além de internet curte um streaming, aqui nós te damos acesso a plataforma Paramount. </td>
                     <td> 
                         <div className= {styles['plan-box']}>
                             <div className= {styles['box']}>

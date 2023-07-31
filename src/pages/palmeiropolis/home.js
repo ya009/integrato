@@ -6,8 +6,8 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componetns/palmeiropolis/navegar'
 import Rodape from '@/componetns/palmeiropolis/rodape'
 import Aplicativo from '@/componetns/aplicativo'
-import BannerMeio from '@/componetns/bannerMeio'
-import Slide from '@/componetns/slide'
+import BannerMeio from '@/componetns/palmeiropolis/bannerMeio'
+import Slide from '@/componetns/palmeiropolis/slide'
 import BannerNumero from '@/componetns/bannerNumero'
 
 const inter = Inter({ subsets: ['latin'] })

@@ -34,7 +34,7 @@ function Navegacao() {
         <Nav.Link href='/jau/contato' eventKey="link-3" style={{ color: 'black'}}> Contato</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-4" href='/RH' style={{ color: 'black'}}> Trabalhe Conosco</Nav.Link>
+        <Nav.Link eventKey="link-4" href='/jau/RH' style={{ color: 'black'}}> Trabalhe Conosco</Nav.Link>
       </Nav.Item>
       <Nav.Item href = '/jau/home' >
         <Image src='/instagram.png' onClick={Instagram} width={30} height={30} style={{ marginRight: '20px' }}></Image>

@@ -28,9 +28,7 @@
     display: inline-block;
     background-color: #7e1bca;
     background-image: linear-gradient(43deg, #7e1bca 0%, #a12aa0 30%, #e2474d 66%, #fd5719 100%);
-
     border: none !important;
-
 }
 
 .box1{
@@ -85,4 +83,6 @@
     margin-bottom: 1%;
     margin-top: 1%;
 }
-
+.nav{
+    border-bottom: #1b1b1a !important;
+}

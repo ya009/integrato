@@ -8,7 +8,6 @@ function BannerTelecom(){
                <h2>A maior rede 4G do Brasil </h2> 
                <h2>Cobertura em 100% dos municípios</h2>
                <h2>Atendimento pela Integrato Fibra</h2>
-               <h2>Atendimento pela Integrato Fibra</h2>
                <h2>Portabilidade em todo Brasil</h2>
             </div>
         </div>

@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from '@/styles/Home.module.css'
 import Form from 'react-bootstrap/Form';
-import { Image } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 
 function NavBar() {
@@ -28,7 +27,6 @@ function NavBar() {
                     </Form.Select>
                 </Nav>
                 <Nav className='justify-content-end'>
-                        <Image src='/whatsapp.png'className= {styles['img']}></Image>
                     <Navbar.Brand href="https://wa.me/556233792938">(62) 3379-2938</Navbar.Brand>
                     <Button onClick={link} className= {styles['botao']}>Área do Cliente</Button>
                 </Nav>

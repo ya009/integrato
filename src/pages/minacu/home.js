@@ -7,8 +7,8 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componetns/minacu/navegar'
 import Rodape from '@/componetns/minacu/rodape'
 import Aplicativo from '@/componetns/aplicativo'
-import BannerMeio from '@/componetns/bannerMeio'
-import Slide from '@/componetns/slide'
+import BannerMeio from '@/componetns/minacu/bannerMeio'
+import Slide from '@/componetns/minacu/slide'
 import BannerNumero from '@/componetns/bannerNumero'
 
 const inter = Inter({ subsets: ['latin'] })

@@ -11,7 +11,7 @@ model contato {
   id       Int    @id @default(autoincrement())
   nome     String @db.VarChar(100)
   email    String @db.VarChar(100)
-  telefone Int
+  telefone String @db.VarChar(299)
   cidade   String @db.VarChar(20)
   mensagem String @db.VarChar(600)
 }
@@ -43,4 +43,14 @@ model contrato {
   distrito       String @db.VarChar(100)
   plano          String @db.VarChar(299)
   vencimento     String @db.VarChar(299)
+}
+
+model rh {
+  id        Int    @id @default(autoincrement())
+  nome      String @db.VarChar(299)
+  email     String @db.VarChar(299)
+  telefone  String @db.VarChar(299)
+  cidade    String @db.VarChar(299)
+  curriculo String @db.VarChar(299)
+  mensagem  String @db.VarChar(299)
 }
