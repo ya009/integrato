@@ -2,9 +2,6 @@ import { Button, Container, Image, Stack } from "react-bootstrap";
 import styles from '@/styles/Confirmacao.module.css'
 import Link from "next/link";
 
-
-
-
 function Confirmacao(){
 
     return(

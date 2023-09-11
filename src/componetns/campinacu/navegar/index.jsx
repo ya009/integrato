@@ -24,29 +24,29 @@ function Navegacao() {
       <Nav.Item href = '/campinacu/home' >
         <Image src='/Integrato_01.png'  width={250} height={60} onClick={Home}></Image>
       </Nav.Item>
-      <Nav.Item>
-        <Nav.Link  href="/campinacu/institucional" eventKey="link-1"  className= {styles['nav']}> Institucional</Nav.Link>
+      <Nav.Item className= {styles['navText']}>
+        <Nav.Link  href="/campinacu/institucional" eventKey="link-1"  > Institucional</Nav.Link>
       </Nav.Item>
-      <Nav.Item>
+      <Nav.Item className= {styles['navText']}>
       <NavDropdown title = "Planos" eventKey="link-2" >
         <NavDropdown.Item href='/campinacu/planoFibra' >Fibra Óptica</NavDropdown.Item>
         <NavDropdown.Item href='/campinacu/planoTelecom' >Telecom</NavDropdown.Item>
       </NavDropdown>
       </Nav.Item>
-      <Nav.Item>
+      <Nav.Item className= {styles['navText']}>
         <Nav.Link href='/campinacu/contato' eventKey="link-3" style={{ color: 'black '}}> Contato</Nav.Link>
       </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-4" href='/campinacu/RH' style={{ color: 'black '}}> Trabalhe Conosco</Nav.Link>
+      <Nav.Item className= {styles['navText']}>
+        <Nav.Link eventKey="link-4" href='/campinacu/RH'  style={{ color: 'black '}}> Trabalhe Conosco</Nav.Link>
       </Nav.Item>
       <Nav.Item >
-        <Image src='/instagram.png' onClick={Instagram} width={30} height={30} style={{ marginRight: '20px' }}></Image>
+        <Image src='/instagram.png' onClick={Instagram} width={40} height={40} style={{ marginRight: '20px' }}></Image>
       </Nav.Item>
       <Nav.Item >
-        <Image src='/facebook.png' onClick={Facebook} width={30} height={30}></Image>
+        <Image src='/facebook.png' onClick={Facebook} width={40} height={40}></Image>
       </Nav.Item>
       <Nav.Item href = '/home' style={{ marginLeft: '20px' }}>
-        <Image src='/whatsapp.png' onClick={Whatsapp} width={32} height={32} ></Image>
+        <Image src='/whatsapp.png' onClick={Whatsapp} width={41} height={41} ></Image>
       </Nav.Item>
     </Nav>
   );
