@@ -33,9 +33,11 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+    margin-bottom: -5%;
 }
 .appBot{ 
-    font-size: 20px;
+    font-size: 1em;
     font-weight:normal;
     color: white;
     margin-left: 45%;
@@ -91,7 +93,7 @@
 }
 .fibraDiv{
     color: white;
-    width: 50%;
+    /* width: 50%; */
 }
 .telecom{
     background-color: #7e1bca;
@@ -105,4 +107,56 @@
 .telecomDiv{
     color: white;
     width: 50%;
+}
+
+@media (max-width: 896px){
+    .box{
+        /* height: 20em; */
+    }
+    .botGP{
+        width: 93px;
+    }
+    .boxnumero{
+        height: 150px;
+    }
+    .slide{
+        margin-bottom: -50%;
+        margin-top: 1%;
+    }
+    .imagemMeio{
+        margin-bottom: -20%;
+        margin-top: -20%;
+    }
+    .div2{
+        font-size: small;
+    }
+    .imagem{
+        width: 1000px;
+    }
+    .bannerBot{
+       display: flex;
+       margin-top: -5%;
+    }
+    .appBot{
+        display: inline-block;
+        margin-top:-350px !important;
+        margin-right: 0;
+    }
+    .bannerBot2{
+        margin-top: -5% !important;
+    }
+    .botGP{
+        /* width: 20px; */
+    }
+    .divAp{
+        /* display: flex; */
+    }
+    .fibraDiv{
+        justify-content: center !important;
+        align-items: center !important; 
+        display: flex;
+    }
+    .telecom{
+        height: 20em;
+    }
 }

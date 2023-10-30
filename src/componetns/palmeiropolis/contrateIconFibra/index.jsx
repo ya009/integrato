@@ -14,7 +14,7 @@ function IconCompra(){
         router.push('/palmeiropolis/ligar')
     }
     function handleClick2(){
-        router.push('/palmeiropolis/assinar')
+        router.push('/palmeiropolis/assinarFibra')
     }
     
 

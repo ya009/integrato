@@ -5,9 +5,6 @@ import Button from "react-bootstrap/Button";
 import { useRouter } from 'next/router';
 import Swal from 'sweetalert2'
 
-
-
-
 function Inicio(){
 
     const router = useRouter();
@@ -40,7 +37,6 @@ function Inicio(){
     return(
         <div className= {styles['body']}>
             <Container className= {styles['container']}>
-
                 <div className= {styles['box']}>
                     <div>
                         <h1 className= {styles['titulo']}>Escolha sua cidade</h1>
@@ -48,8 +44,6 @@ function Inicio(){
                     <div>
                         <h2 className= {styles['sub']}>Precisamos saber sua cidade para verificar a disponibilidade de sinal na região.</h2>
                     </div>
-                    
-                    
                 </div>
                 <div className= {styles['box2']}>
                     <div className= {styles['s']}>
@@ -60,20 +54,13 @@ function Inicio(){
                         <option value={'palmeiropolis'}>Palmeirópolis(TO)</option>
                         <option value={'jau'}>Jaú(TO)</option>
                     </Form.Select>
-                    </div>
-                    
+                    </div>                   
                     <div className= {styles['botao']}>
                     <Button onClick={link} className= {styles['b2']} >Verificar</Button>
-                    </div>
-                    
+                    </div>                   
                 </div>
-
-                
-
             </Container>
-            
         </div>
-
     )
 }
 

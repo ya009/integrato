@@ -28,11 +28,32 @@
     flex:1;
     margin-right: 10%;
     align-items: center;
+    width: 600px;
+    border: none;
+    background-color: #e6e6e6;
+  
 }
 .box2{
     flex:1;
-    justify-content: center 
+    justify-content: center ;
+    border: none;
+    background-color: #e6e6e6;
 }
 .div{
     max-width: 100%;
+}
+@media (max-width: 896px){
+    .texto{
+        width: 100%;
+    }
+    .tela{
+        display: grid;
+    }
+    .titulo{
+        font-size: 35px;
+        margin-left: 0%;
+    }
+    .box1{
+        width: 350px;
+    }
 }

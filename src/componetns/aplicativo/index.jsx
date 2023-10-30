@@ -1,4 +1,4 @@
-const { Image, Button } = require("react-bootstrap");
+const { Image, Button, Card } = require("react-bootstrap");
 import styles from '@/styles/Banner.module.css'
 
 function Aplicativo(){
@@ -10,27 +10,29 @@ function Aplicativo(){
         window.open('https://play.google.com/store/apps/details?id=br.net.integrato.centralcliente')
     }
 
-      
-
     return(
-        <div className= {styles['box']}>
-            <div >
+        <Card>
+             <div className= {styles['box']}>
+            <div className= {styles['divAp']}>
                 <Image src='/IRe.png' className= {styles['celular']}></Image>
                 <div className= {styles['appBot']}>
                 Pesquise por Integrato em:
-                <div>
-                  
-                </div>
-                <Button style={{ border: 'none', background: 'none', padding: 0 }} onClick={playStore}>
+                <div className= {styles['bannerBot2']}>
+                <Button className= {styles['bannerBot']} style={{ border: 'none', background: 'none'}} onClick={playStore}>
                 <Image src='/gp.png'  width={110} height={50} className= {styles['botGP']}></Image>
                 </Button>
-                <Button style={{ border: 'none', background: 'none' }} onClick={appStore}>
+                <Button  className= {styles['bannerBot']} style={{ border: 'none', background: 'none' }} onClick={appStore}>
                 <Image src='/AS.png' width={110} height={50} className= {styles['botGP']}></Image>
                 </Button>
+                </div>
+                
               
               </div> 
             </div> 
         </div>
+
+        </Card>
+       
     )
 }
 export default Aplicativo;

@@ -5,6 +5,10 @@
     color: #fff !important;
     width: 300px !important;
 }
+.navPrincipal{
+    display: grid;
+}
+
 .body{
     background-color: #e6e6e6;
 }
@@ -16,7 +20,7 @@
     color: white;
 }
 .botao{
-    display: inline-block;
+    display: flex;
     border: none !important;
     cursor: pointer;
     color: white;
@@ -91,4 +95,26 @@
  
     border-bottom: 3px solid #7E1BCA ;
   
+}
+.divNavegar{
+    display: grid;
+}
+@media (max-width: 896px){
+
+  
+    .navPrincipalCont{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .textNumero{
+        display: inline-block !important;
+        margin-top: 1%;
+    }
+    .botao{
+        display: flex;
+        margin-top: 1%;
+        
+    }
 }

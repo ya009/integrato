@@ -1,0 +1,27 @@
+on: 
+    push:
+        branches:
+            - main
+name: 🚀 Deploy SiteIntegrato on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{secrets.HOST}}
+        username: ${{secrets.USER}}
+        password: ${{secrets.PASSWORD}}
+        server-dir: /usr/share/nginx/SiteIntegrato/
+        protocol: ftp
+        port: 22

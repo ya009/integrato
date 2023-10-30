@@ -4,9 +4,9 @@ import styles from '@/styles/Plano.module.css'
 import NavBar from '@/componetns/minacu/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componetns/minacu/navegar'
-import TablePlan from '@/componetns/minacu/tabelaPlano';
 import Rodape from '@/componetns/minacu/rodape';
 import BannerTelecom from '@/componetns/bannerTelecom';
+import TableTelecom from '@/componetns/minacu/tabelaTelecom';
 
 
 
@@ -25,7 +25,7 @@ export default function Plano() {
       <div className= {styles['body']}>
       <Navegacao/>
         <BannerTelecom/>
-      <TablePlan/>
+      <TableTelecom/>
       <Rodape/>
       </div>
     </>

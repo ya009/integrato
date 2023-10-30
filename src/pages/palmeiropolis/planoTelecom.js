@@ -4,9 +4,9 @@ import styles from '@/styles/Plano.module.css'
 import NavBar from '@/componetns/palmeiropolis/navBar'
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import Navegacao from '@/componetns/palmeiropolis/navegar'
-import TablePlan from '@/componetns/palmeiropolis/tabelaPlano';
 import Rodape from '@/componetns/palmeiropolis/rodape';
 import BannerTelecom from '@/componetns/bannerTelecom';
+import TableTelecom from '@/componetns/palmeiropolis/tabelaTelecom';
 
 
 
@@ -25,7 +25,7 @@ export default function Plano() {
       <div className= {styles['body']}>
       <Navegacao/>
         <BannerTelecom/>
-      <TablePlan/>
+        <TableTelecom/>
       <Rodape/>
       </div>
     </>

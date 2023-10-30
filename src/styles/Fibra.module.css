@@ -76,9 +76,7 @@
     color: #464645;
     display: inline-block;
 }
-.valor {
 
-}
 .box {
     display: inline-block;
     width: 80%;
@@ -111,6 +109,7 @@
     font-size: 18px;
     line-height: 30px;
     color: black;
+    padding: 2%;
 
 }
 .imagem{
@@ -119,4 +118,34 @@
     height: 10%;
     margin: auto;
     margin-top: -7%;
+}
+@media(max-width:  896px){
+    .tablePlan{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .cima{
+        display: flex;
+    }
+    .card{
+        background-color: #e6e6e6;
+    }
+    .botao{
+        font-size: larger;
+        margin: 3%;
+    }
+    .inteiro{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .boxRight{
+        /* margin-left: 10%; */
+        margin-top: 2%;
+    }
+    .plan-box{
+        display: flex;
+        justify-content: center;
+    }
 }

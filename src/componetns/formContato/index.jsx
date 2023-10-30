@@ -14,7 +14,6 @@ function FormContato(){
 
     const enviar = async (e) => {
         e.preventDefault()
-        console.log(nome)
 
         const res = await fetch ('/api/contato', {
             method: 'POST',
@@ -28,7 +27,6 @@ function FormContato(){
             showConfirmButton: false,
             timer: 1500
           })
-
         }
     
     return(
@@ -72,12 +70,9 @@ function FormContato(){
                     </Form>
                     <div className="d-flex justify-content-center">
                         <Button className= {styles['botao']} variant='secondary' onClick={enviar}> Enviar </Button>
-
                     </div>
-                   
                 </Card>
             </CardGroup>
-
         </Container>
     )
 }

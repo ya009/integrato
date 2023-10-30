@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Contrate.module.css'
-import NavBar from '@/componetns/jau/navBar'
-import  'bootstrap/dist/css/bootstrap.min.css' ;
-import Navegacao from '@/componetns/jau/navegar'
-import Rodape from '@/componetns/jau/rodape';
-import Contrate from '@/componetns/contrateTitulo';
-import IconCompra from '@/componetns/jau/contrateIcon';
+import styles from '@/styles/Online.module.css'
+import NavBar from '@/componetns/campinacu/navBar'
+import 'bootstrap/dist/css/bootstrap.min.css' ;
+import Navegacao from '@/componetns/campinacu/navegar'
+import Rodape from '@/componetns/campinacu/rodape';
+import FormCadastro from '@/componetns/campinacu/formFibra';
+import TituloOnline from '@/componetns/tituloOnline';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Plano() {
+export default function Assinar() {
   return (
     <>
       <Head>
@@ -22,8 +22,8 @@ export default function Plano() {
       <NavBar/>
       <div className= {styles['body']}>
       <Navegacao/>
-      <Contrate/>
-      <IconCompra/>
+      <TituloOnline/>
+      <FormCadastro/>
       <Rodape/>
       </div>
     </>

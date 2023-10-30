@@ -14,7 +14,7 @@ function IconCompra(){
         router.push('/minacu/ligar')
     }
     function handleClick2(){
-        router.push('/minacu/assinar')
+        router.push('/minacu/assinarTelecom')
     }
     
 

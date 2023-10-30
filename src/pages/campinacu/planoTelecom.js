@@ -23,7 +23,7 @@ export default function Plano() {
       </Head>
       <NavBar/>
       <Navegacao/>
-        <BannerTelecom/>
+      <BannerTelecom/>
       <TableTelecom/>
       <Rodape/>
     </>

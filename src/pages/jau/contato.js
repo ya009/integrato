@@ -24,7 +24,6 @@ export default function Contato() {
       <div className= {styles['body']}>
       <Navegacao/>
       <FormContato/>
-      <Localizacao/>
       <Rodape/>
       </div>
     </>

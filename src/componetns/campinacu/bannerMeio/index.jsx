@@ -10,7 +10,7 @@ function BannerMeio(){
                 <Image src="/homeMeio.png" className= {styles['imagem']} ></Image>
             </div>
             <div className= {styles['div2']}>
-                <h1>
+                <h1 className= {styles['div2Text']}>
                     Procurando o <strong>melhor plano de internet</strong>, com velocidade e estabilidade de conexão?
                 </h1>
                 <Link href= '/campinacu/planoFibra'>

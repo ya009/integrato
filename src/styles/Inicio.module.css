@@ -62,3 +62,30 @@
     display: flex;
     align-items: center;
 }
+@media (max-width: 896px){
+    .select{
+        font-size: larger;
+        width: 250px !important ;
+        margin-top: 5%;
+        
+    }
+    .container{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40%;
+        /* height: 100%; */
+    }
+    .botao{
+        margin-bottom: 2%;
+    }
+    
+}
+@media(max-width: 568px){
+    .select{
+        width: 5%;
+    }
+    .b2{
+        font-size: small;
+    }
+}

@@ -96,7 +96,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
    
   }
 .boxRight{
@@ -116,5 +115,10 @@
     height: 10%;
     margin: auto;
     margin-top: -7%;
+}
+@media (max-width: 896px){
+    .container{
+        width: 400px;
+    }
 }
 

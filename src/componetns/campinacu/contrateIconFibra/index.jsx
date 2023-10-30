@@ -9,15 +9,12 @@ import { useRouter } from 'next/router';
 function IconCompra(){
 
     const router = useRouter();
-
     function handleClick(){
-        router.push('/jau/ligar')
+        router.push('/campinacu/ligar')
     }
     function handleClick2(){
-        router.push('/jau/assinar')
+        router.push('/campinacu/assinarFibra')
     }
-    
-
     return(
         <Container className= {styles['container']}>
             <CardGroup className= {styles['cardG']}>
